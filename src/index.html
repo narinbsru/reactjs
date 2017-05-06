@@ -1,455 +1,529 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Tutorial: Intro To React - React</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-
 <body>
-    <section class="mainmenu">
-        <nav class="navbar navbar-toggleable-md">
-            <button class="navbar-toggler navbar-inverse bg-inverse navbar-toggler-right" type="button" data-toggle="collapse" data-target="	#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-            <a class="navbar-brand" href="#"><img src="../images/class7logo.png"></a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav navbar-module mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <i class="fa fa-desktop"></i> Dasboard
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbarPurchase" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-shopping-bag"></i> Purchase
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-root" aria-labelledby="navbarPurchase">
-                            <div class="menu-root-list">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th>Purchase</th>
-                                                    <th>Reporting</th>
-                                                    <th>Master Data</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <ul class="list-unstyled">
-                                                            <li><a href="#"> Quotation </a></li>
-                                                            <li><a href="#"> Purchase order </a></li>
-                                                            <li><a href="#"> Received note </a></li>
-                                                            <li><a href="#"> Return order </a></li>
-                                                        </ul>
-                                                    </td>
-                                                    <td>
-                                                        <ul class="list-unstyled">
-                                                            <li><a href="#"> Quotation report </a></li>
-                                                            <li><a href="#"> Purchase order report </a></li>
-                                                            <li><a href="#"> Received note report </a></li>
-                                                            <li><a href="#"> Return order report </a></li>
-                                                            <li><a href="#"> Purchase Summary report </a></li>
-                                                            <li><a href="#"> Received Summary report </a></li>
-                                                        </ul>
-                                                    </td>
-                                                    <td>
-                                                        <ul class="list-unstyled">
-                                                            <li><a href="#"> Vat Setting </a></li>
-                                                            <li><a href="#"> Purchase type </a></li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbarSale" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-file-text-o"></i> Sale
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-root" aria-labelledby="navbarSale">
-                            <div class="menu-root-list">
-                                <table class="table">
-                                    <thead>
+<section class="mainmenu">
+    <nav class="navbar navbar-toggleable-md">
+        <button class="navbar-toggler navbar-inverse bg-inverse navbar-toggler-right" type="button"
+                data-toggle="collapse" data-target="	#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="../images/class7logo.png"></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav navbar-module mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fa fa-desktop"></i> Dasboard
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbarPurchase"
+                       aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-shopping-bag"></i> Purchase
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-root" aria-labelledby="navbarPurchase">
+                        <div class="menu-root-list">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <table class="table">
+                                        <thead>
                                         <tr>
-                                            <th>Sale</th>
+                                            <th>Purchase</th>
                                             <th>Reporting</th>
                                             <th>Master Data</th>
                                         </tr>
-                                    </thead>
-                                    <tbody>
+                                        </thead>
+                                        <tbody>
                                         <tr>
                                             <td>
                                                 <ul class="list-unstyled">
-                                                    <li><a href="#"> Requisition </a></li>
-                                                    <li><a href="#"> Invoice order </a></li>
+                                                    <li><a href="#"> Quotation </a></li>
+                                                    <li><a href="#"> Purchase order </a></li>
+                                                    <li><a href="#"> Received note </a></li>
                                                     <li><a href="#"> Return order </a></li>
-                                                    <li><a href="#"> Credit note </a></li>
-                                                    <li><a href="#"> Debit note </a></li>
                                                 </ul>
                                             </td>
                                             <td>
                                                 <ul class="list-unstyled">
-                                                    <li><a href="#"> Requisition report </a></li>
-                                                    <li><a href="#"> Invoice report </a></li>
+                                                    <li><a href="#"> Quotation report </a></li>
+                                                    <li><a href="#"> Purchase order report </a></li>
+                                                    <li><a href="#"> Received note report </a></li>
                                                     <li><a href="#"> Return order report </a></li>
-                                                    <li><a href="#"> Credit note report </a></li>
-                                                    <li><a href="#"> Debit note report </a></li>
-                                                    <li><a href="#"> Invoice Summary </a></li>
+                                                    <li><a href="#"> Purchase Summary report </a></li>
+                                                    <li><a href="#"> Received Summary report </a></li>
                                                 </ul>
                                             </td>
                                             <td>
                                                 <ul class="list-unstyled">
                                                     <li><a href="#"> Vat Setting </a></li>
-                                                    <li><a href="#"> Invoice type </a></li>
+                                                    <li><a href="#"> Purchase type </a></li>
                                                 </ul>
                                             </td>
                                         </tr>
-                                    </tbody>
-                                </table>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbarLogistics" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-truck"></i> Logistics
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-root" aria-labelledby="navbarLogistics">
-                            <div class="menu-root-list">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>Logistics</th>
-                                            <th>Reporting</th>
-                                            <th>Master Data</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <ul class="list-unstyled">
-                                                    <li><a href="#"> ส่งสินค้า </a></li>
-                                                    <li><a href="#"> รายการค้างส่ง </a></li>
-                                                </ul>
-                                            </td>
-                                            <td>
-                                                <ul class="list-unstyled">
-                                                    <li><a href="#"> รายการส่งสินค้า </a></li>
-                                                    <li><a href="#"> รายการค้างส่ง </a></li>
-                                                    <li><a href="#"> Summary </a></li>
-                                                </ul>
-                                            </td>
-                                            <td>
-                                                <ul class="list-unstyled">
-                                                    <li><a href="#"> Type Transport </a></li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbarSale"
+                       aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-file-text-o"></i> Sale
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-root" aria-labelledby="navbarSale">
+                        <div class="menu-root-list">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Sale</th>
+                                    <th>Reporting</th>
+                                    <th>Master Data</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#"> Requisition </a></li>
+                                            <li><a href="#"> Invoice order </a></li>
+                                            <li><a href="#"> Return order </a></li>
+                                            <li><a href="#"> Credit note </a></li>
+                                            <li><a href="#"> Debit note </a></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#"> Requisition report </a></li>
+                                            <li><a href="#"> Invoice report </a></li>
+                                            <li><a href="#"> Return order report </a></li>
+                                            <li><a href="#"> Credit note report </a></li>
+                                            <li><a href="#"> Debit note report </a></li>
+                                            <li><a href="#"> Invoice Summary </a></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#"> Vat Setting </a></li>
+                                            <li><a href="#"> Invoice type </a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbarWarehouse" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-cubes"></i> Warehouse
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-root" aria-labelledby="navbarWarehouse">
-                            <div class="menu-root-list">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>Warehouse</th>
-                                            <th>Reporting</th>
-                                            <th>Master Data</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <ul class="list-unstyled">
-                                                    <li><a href="#"> Stocking </a></li>
-                                                    <li><a href="#"> Reserve Stock </a></li>
-                                                    <li><a href="#"> Incoming </a></li>
-                                                    <li><a href="#"> Outing </a></li>
-                                                    <li><a href="#"> Check Stock (Audit stock) </a></li>
-                                                </ul>
-                                            </td>
-                                            <td>
-                                                <ul class="list-unstyled">
-                                                    <li><a href="#"> Stocking Report </a></li>
-                                                    <li><a href="#"> Reserve Stock Report </a></li>
-                                                    <li><a href="#"> Incoming Report </a></li>
-                                                    <li><a href="#"> Outing Report </a></li>
-                                                    <li><a href="#"> Check Stock (Audit stock) </a></li>
-                                                </ul>
-                                            </td>
-                                            <td>
-                                                <ul class="list-unstyled">
-                                                    <li><a href="#"> Type Stock </a></li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbarLogistics"
+                       aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-truck"></i> Logistics
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-root" aria-labelledby="navbarLogistics">
+                        <div class="menu-root-list">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Logistics</th>
+                                    <th>Reporting</th>
+                                    <th>Master Data</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#"> ส่งสินค้า </a></li>
+                                            <li><a href="#"> รายการค้างส่ง </a></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#"> รายการส่งสินค้า </a></li>
+                                            <li><a href="#"> รายการค้างส่ง </a></li>
+                                            <li><a href="#"> Summary </a></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#"> Type Transport </a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbarAccounting" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-credit-card"></i> Accounting
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-root" aria-labelledby="navbarAccounting">
-                            <div class="menu-root-list">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>Accounting</th>
-                                            <th>Reporting</th>
-                                            <th>Master Data</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <ul class="list-unstyled">
-                                                    <li><a href="#"> ชำระเงิน </a></li>
-                                                    <li><a href="#"> เรียกเก็บเงิน </a></li>
-                                                    <li><a href="#"> รับเงิน </a></li>
-                                                    <li><a href="#"> ต้นทุนสินค้า </a></li>
-                                                    <li><a href="#"> Employee Salary </a></li>
-                                                </ul>
-                                            </td>
-                                            <td>
-                                                <ul class="list-unstyled">
-                                                    <li><a href="#"> Invoice </a></li>
-                                                    <li><a href="#"> Outstanding </a></li>
-                                                    <li><a href="#"> Cost Item </a></li>
-                                                    <li><a href="#"> Employee Salary </a></li>
-                                                </ul>
-                                            </td>
-                                            <td>
-                                                <ul class="list-unstyled">
-                                                    <li><a href="#"> Bank </a></li>
-                                                    <li><a href="#"> DueDate Settings </a></li>
-                                                    <li><a href="#"> Type Tranfer </a></li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbarWarehouse"
+                       aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-cubes"></i> Warehouse
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-root" aria-labelledby="navbarWarehouse">
+                        <div class="menu-root-list">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Warehouse</th>
+                                    <th>Reporting</th>
+                                    <th>Master Data</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#"> Stocking </a></li>
+                                            <li><a href="#"> Reserve Stock </a></li>
+                                            <li><a href="#"> Incoming </a></li>
+                                            <li><a href="#"> Outing </a></li>
+                                            <li><a href="#"> Check Stock (Audit stock) </a></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#"> Stocking Report </a></li>
+                                            <li><a href="#"> Reserve Stock Report </a></li>
+                                            <li><a href="#"> Incoming Report </a></li>
+                                            <li><a href="#"> Outing Report </a></li>
+                                            <li><a href="#"> Check Stock (Audit stock) </a></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#"> Type Stock </a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbarHumanResource" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-address-card-o"></i> Human Resource
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-root dropdown-menu-right" aria-labelledby="navbarHumanResource">
-                            <div class="menu-root-list">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>Manager Employees</th>
-                                            <th>Reporting</th>
-                                            <th>Standard Settings</th>
-                                            <th>Master Data</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <ul class="list-unstyled">
-                                                    <li><a href="#"> Employee </a></li>
-                                                    <li><a href="#"> Salary </a></li>
-                                                </ul>
-                                            </td>
-                                            <td>
-                                                <ul class="list-unstyled">
-                                                    <li><a href="#"> Salary Report </a></li>
-                                                    <li><a href="#"> Employee Report </a></li>
-                                                    <li><a href="#"> Out of work </a></li>
-                                                </ul>
-                                            </td>
-                                            <td>
-                                                <ul class="list-unstyled">
-                                                    <li><a href="#"> Salary Default </a></li>
-                                                    <li><a href="#"> Bonus Default </a></li>
-                                                    <li><a href="#"> OT Settings </a></li>
-                                                    <li><a href="#"> Payroll Deduction Settings </a></li>
-                                                </ul>
-                                            </td>
-                                            <td>
-                                                <ul class="list-unstyled">
-                                                    <li><a href="#"> Position </a></li>
-                                                    <li><a href="#"> Date Settings </a></li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbarAccounting"
+                       aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-credit-card"></i> Accounting
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-root" aria-labelledby="navbarAccounting">
+                        <div class="menu-root-list">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Accounting</th>
+                                    <th>Reporting</th>
+                                    <th>Master Data</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#"> ชำระเงิน </a></li>
+                                            <li><a href="#"> เรียกเก็บเงิน </a></li>
+                                            <li><a href="#"> รับเงิน </a></li>
+                                            <li><a href="#"> ต้นทุนสินค้า </a></li>
+                                            <li><a href="#"> Employee Salary </a></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#"> Invoice </a></li>
+                                            <li><a href="#"> Outstanding </a></li>
+                                            <li><a href="#"> Cost Item </a></li>
+                                            <li><a href="#"> Employee Salary </a></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#"> Bank </a></li>
+                                            <li><a href="#"> DueDate Settings </a></li>
+                                            <li><a href="#"> Type Tranfer </a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbarWarehouse" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-users"></i> General Data
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-root" aria-labelledby="navbarWarehouse">
-                            <div class="menu-root-list">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>Partner Data</th>
-                                            <th>Main Data</th>
-                                            <th>Properties data product</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <ul class="list-unstyled">
-                                                    <li><a href="#"> Customer </a></li>
-                                                    <li><a href="#"> Supplier </a></li>
-                                                    <li><a href="#"> Group of customer </a></li>
-                                                </ul>
-                                            </td>
-                                            <td>
-                                                <ul class="list-unstyled">
-                                                    <li><a href="#"> Product </a></li>
-                                                    <li><a href="#"> Other </a></li>
-                                                </ul>
-                                            </td>
-                                            <td>
-                                                <ul class="list-unstyled">
-                                                    <li><a href="#"> Color product </a></li>
-                                                    <li><a href="#"> Unit product </a></li>
-                                                    <li><a href="#"> Group product </a></li>
-                                                    <li><a href="#"> Size product </a></li>
-                                                    <li><a href="#"> Type product </a></li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbarHumanResource"
+                       aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-address-card-o"></i> Human Resource
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-root"
+                         aria-labelledby="navbarHumanResource">
+                        <div class="menu-root-list">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Manager Employees</th>
+                                    <th>Reporting</th>
+                                    <th>Standard Settings</th>
+                                    <th>Master Data</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#"> Employee </a></li>
+                                            <li><a href="#"> Salary </a></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#"> Salary Report </a></li>
+                                            <li><a href="#"> Employee Report </a></li>
+                                            <li><a href="#"> Out of work </a></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#"> Salary Default </a></li>
+                                            <li><a href="#"> Bonus Default </a></li>
+                                            <li><a href="#"> OT Settings </a></li>
+                                            <li><a href="#"> Payroll Deduction Settings </a></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#"> Position </a></li>
+                                            <li><a href="#"> Date Settings </a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbarAdmin" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-cog"></i> Admin
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-root dropdown-menu-right" aria-labelledby="navbarAdmin">
-                            <div class="menu-root-list">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>User Manage</th>
-                                            <th>Data Manage</th>
-                                            <th>Systems</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <ul class="list-unstyled">
-                                                    <li><a href="#"> Users Management </a></li>
-                                                    <li><a href="#"> User Role </a></li>
-                                                </ul>
-                                            </td>
-                                            <td>
-                                                <ul class="list-unstyled">
-                                                    <li><a href="#"> Backup Data </a></li>
-                                                    <li><a href="#"> Restore Data </a></li>
-                                                    <li><a href="#"> Setting Scheduler </a></li>
-                                                    <li><a href="#"> Logs Status </a></li>
-                                                </ul>
-                                            </td>
-                                            <td>
-                                                <ul class="list-unstyled">
-                                                    <li><a href="#"> Logs Systems </a></li>
-                                                    <li><a href="#"> Monitoring </a></li>
-                                                    <li><a href="#"> Application Information </a></li>
-                                                    <li>Version : 0.0.1</li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbarotherdata"
+                       aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-users"></i> General Data
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-root" aria-labelledby="navbarotherdata">
+                        <div class="menu-root-list">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Partner Data</th>
+                                    <th>Main Data</th>
+                                    <th>Properties data product</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#"> Customer </a></li>
+                                            <li><a href="#"> Supplier </a></li>
+                                            <li><a href="#"> Group of customer </a></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#"> Product </a></li>
+                                            <li><a href="#"> Other </a></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#"> Color product </a></li>
+                                            <li><a href="#"> Unit product </a></li>
+                                            <li><a href="#"> Group product </a></li>
+                                            <li><a href="#"> Size product </a></li>
+                                            <li><a href="#"> Type product </a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
-                    </li>
-                </ul>
-                <ul class="navbar-nav navbar-user my-2 my-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" data-toggle="dropdown" id="navbarNotification" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-commenting-o"></i>
-                            <span class="badge badge-pill badge-danger totle-notification">12</span>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarNotification">
-                            <a class="dropdown-item" href="#">Notification 1</a>
-                            <a class="dropdown-item" href="#">Notification 2</a>
-                            <a class="dropdown-item" href="#">Notification 3</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbarAdmin"
+                       aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-cog"></i> Admin
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-root" aria-labelledby="navbarAdmin">
+                        <div class="menu-root-list">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>User Manage</th>
+                                    <th>Data Manage</th>
+                                    <th>Systems</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#"> Users Management </a></li>
+                                            <li><a href="#"> User Role </a></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#"> Backup Data </a></li>
+                                            <li><a href="#"> Restore Data </a></li>
+                                            <li><a href="#"> Setting Scheduler </a></li>
+                                            <li><a href="#"> Logs Status </a></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#"> Logs Systems </a></li>
+                                            <li><a href="#"> Monitoring </a></li>
+                                            <li><a href="#"> Application Information </a></li>
+                                            <li>Version : 0.0.1</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-user-o"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarUser">
-                            <a class="dropdown-item" href="#">Profile</a>
-                            <a class="dropdown-item" href="#">Change password</a>
-                            <a class="dropdown-item" href="#">History</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Logut</a>
-                        </div>
-                    </li>
-                </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav navbar-user my-2 my-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" data-toggle="dropdown" id="navbarNotification" aria-haspopup="true"
+                       aria-expanded="false">
+                        <i class="fa fa-commenting-o"></i>
+                        <span class="badge badge-pill badge-danger totle-notification">12</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarNotification">
+                        <a class="dropdown-item" href="#">Notification 1</a>
+                        <a class="dropdown-item" href="#">Notification 2</a>
+                        <a class="dropdown-item" href="#">Notification 3</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarUser" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user-o"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarUser">
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Change password</a>
+                        <a class="dropdown-item" href="#">History</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Logut</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</section>
+<div class="container-fluid top-navigator">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="target-location-page">
+                <nav class="breadcrumb">
+                    <span class="breadcrumb-item active title">You are here : </span>
+                    <!--<a class="breadcrumb-item" href="#">Dashbaord</a>
+                    <a class="breadcrumb-item" href="#">Sale</a>
+                    <a class="breadcrumb-item" href="#">Invoice</a>-->
+                    <span class="breadcrumb-item active">Dashbaord</span>
+                </nav>
+                <h3>Dashbaord</h3>
             </div>
-        </nav>
-    </section>
-    <div class="container-fluid top-navigator">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="target-location-page">
-                    <nav class="breadcrumb">
-                        <span class="breadcrumb-item active title">You are here : </span>
-                        <a class="breadcrumb-item" href="#">Dashbaord</a>
-                        <a class="breadcrumb-item" href="#">Sale</a>
-                        <a class="breadcrumb-item" href="#">Invoice</a>
-                        <span class="breadcrumb-item active">New Invoice</span>
-                    </nav>
-                    <h3>New Invoice</h3>
+        </div>
+        <div class="col-md-8 text-right">
+            <ul class="list-main-action">
+                <!--<li>
+                    <button type="button"><i class="fa fa-file-o"></i> New</button>
+                </li>
+                <li>
+                    <button type="button"><i class="fa fa-edit"></i> Edit</button>
+                </li>
+                <li>
+                    <button type="button"><i class="fa fa-eraser"></i> Delete</button>
+                </li>
+                <li>
+                    <button type="button"><i class="fa fa-save"></i> Save</button>
+                </li>
+                <li>
+                    <button type="button"><i class="fa fa-clipboard"></i> Save as template</button>
+                </li>
+                <li>
+                    <button type="button"><i class="fa fa-clone"></i> Copy</button>
+                </li>-->
+                <li>
+                    <button type="button"><i class="fa fa-print"></i> Print</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container-fluid content">
+    <div class="row">
+        <div class="col-md-7">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel-content">
+                        <h5>Summary Invoices</h5>
+                        <canvas id="myChart" width="400" height="400"></canvas>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-8 text-right">
-                <ul class="list-main-action">
-                    <li><button type="button"><i class="fa fa-file-o"></i> New </button></li>
-                    <li><button type="button"><i class="fa fa-edit"></i> Edit </button></li>
-                    <li><button type="button"><i class="fa fa-eraser"></i> Delete </button></li>
-                    <li><button type="button"><i class="fa fa-save"></i> Save </button></li>
-                    <li><button type="button"><i class="fa fa-clipboard"></i> Save as template</button></li>
-                    <li><button type="button"><i class="fa fa-clone"></i> Copy </button></li>
-                    <li><button type="button"><i class="fa fa-print"></i> Print </button></li>
-                </ul>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel-content">
+                        <h5>Summary purchase orders</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel-content">
+                        <h5>Recently Invoices</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel-content">
+                        <h5>Recently Activities</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel-content">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h5>Receiving purchase Orders</h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>Invoice waiting transfer</h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>Payment orders</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid content">
-        <div class="row">
-            <div class="col-md-12">
-                
-            </div>
-        </div>
-    </div>
+</div>
+<div id="mainapp"></div>
 </body>
-
 </html>
